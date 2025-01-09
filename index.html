@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    /* Top Blue Strips (accents) */
+    .top-blue-strip {
+        width: 100%;
+        height: 8px;
+        background-color: #0070A9; 
+        flex-shrink: 0;
+    }
+    .top-small-blue-strip {
+        width: 100%;
+        height: 4px; 
+        background-color: #0070A9;
+        flex-shrink: 0;
+    }
+
+    /* Top Banner Area */
+    .top-banner-wrapper {
+        width: 100%;
+        background-color: #181A17;
+        text-align: center;
+        padding: 5px 0;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    /* Accent bars on left and right */
+    .top-banner-wrapper::before,
+    .top-banner-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0; 
+        bottom: 0; 
+        width: 50px;
+    }
+
+    .top-banner-wrapper::before {
+        left: 0;
+        background-color: #C21D20;
+    }
+
+    .top-banner-wrapper::after {
+        right: 0;
+        background-color: #0070A9;
+    }
+
+    .team-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .team-name {
+        display: inline-block;
+        background-color: #fff;
+        padding: 3px 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        white-space: nowrap;
+    }
+    .team-bills {
+        color: #C01D1E;
+    }
+    .team-lions {
+        color: #0175B0;
+    }
+
+    .at-text {
+        font-size: 12px;
+        color: #E0E0E0; 
+        font-weight: normal;
+    }
+
+    /* Middle flexible area */
+    .middle-flex {
+        flex: 1;
+        background-color: transparent;
+    }
+
+    /* Bottom Section */
+    .bottom-black-bar {
+        width: 100%;
+        background-color: #232323;
+        text-align: center;
+        padding: 4px 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+    .bottom-black-bar span {
+        color: #E0E0E0;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .bottom-container {
+        width: 100%;
+        background-color: #A6A19D;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+
+    .bottom-logo {
+        margin-right: 10px;
+        width: 100px;
+        height: auto;
+    }
+
+    .bottom-text-container {
+        flex: 1;
+        text-align: center;
+    }
+
+    .main-question {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        color: #1F211D;
+        line-height: 1.2;
+    }
+
+    .subtext {
+        font-size: 14px;
+        margin: 5px 0 0 0;
+        color: #1F211D;
+        line-height: 1.2;
+    }
+
+    .bottom-blue-strip {
+        width: 100%;
+        height: 4px; 
+        background-color: #0070A9;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- TOP SECTION -->
+    <div class="top-blue-strip"></div>
+    <div class="top-banner-wrapper">
+        <div class="team-container">
+            <span class="team-name team-bills">BILLS</span>
+            <span class="at-text">AT</span>
+            <span class="team-name team-lions">LIONS</span>
+        </div>
+    </div>
+    <div class="top-small-blue-strip"></div>
+
+    <!-- Middle flexible area -->
+    <div class="middle-flex"></div>
+
+    <!-- BOTTOM SECTION -->
+    <div class="bottom-black-bar">
+        <span>First Pick With Cyrus and Virgil</span>
+    </div>
+    <div class="bottom-container">
+        <img class="bottom-logo" src="Logo_PNG.png" alt="Logo" />
+        <div class="bottom-text-container">
+            <h1 class="main-question">Does Dan Campbell Take Too Many In-Game Risks?</h1>
+            <p class="subtext">DET: Failed to recover onside kick with 12:00 remaining (trailed 38-28) | BUF 48, DET 42</p>
+        </div>
+    </div>
+    <div class="bottom-blue-strip"></div>
+</div>
+</body>
+</html>
