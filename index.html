@@ -7,14 +7,14 @@
     <script>
         const pageConfig = {
             topBanner: {
-                team1: "PREVIEW",
+                team1: "KC",
                 middleText: "VS",
-                team2: "PREVIEW"
+                team2: "FNC"
             },
             bottomBanner: {
                 showTitle: "First Pick With Cyrus and Virgil",
-                mainQuestion: "Is BRO The Best Team In The LCK?",
-                subtitle: "Cavs -1.5 vs Rockets | Hawks -2.5 vs Pistons, TWolves -2.5 vs Mavs "
+                mainQuestion: "FNC Choke, Lose 0-3 to KC In Embarassing Fashion",
+                subtitle: "Who Is To Blame? | KC -130 to Win Series  "
             }
         };
     </script>
@@ -36,22 +36,22 @@
             background-color: transparent;
         }
     
-        .top-blue-strip {
+        .top-gold-strip {
             width: 100%;
-            height: 8px;
-            background-color: #4B0082;
+            height: 6px;
+            background-color: #fb8b3a;
             flex-shrink: 0;
         }
-        .top-small-blue-strip {
+        .top-small-gold-strip {
             width: 100%;
-            height: 4px; 
-            background-color: #4B0082;
+            height: 6px; 
+            background-color: #fb8b3a;
             flex-shrink: 0;
         }
     
         .top-banner-wrapper {
             width: 100%;
-            background-color: #A6A19D;
+            background-color: #9CA5A2;
             text-align: center;
             padding: 5px 0;
             flex-shrink: 0;
@@ -103,7 +103,7 @@
     
         .bottom-container {
             width: 100%;
-            background-color: #A6A19D;
+            background-color: #9CA5A2;
             display: flex;
             align-items: center;
             padding: 10px;
@@ -137,10 +137,17 @@
             line-height: 1.2;
         }
     
-        .bottom-blue-strip {
+        .bottom-gold-strip {
             width: 100%;
-            height: 4px; 
-            background-color: #4B0082;
+            height: 6px; 
+            background-color: #fb8b3a;
+            flex-shrink: 0;
+        }
+        
+        .middle-gold-strip {
+            width: 100%;
+            height: 6px;
+            background-color: #fb8b3a;
             flex-shrink: 0;
         }
     </style>
@@ -148,7 +155,7 @@
 <body>
 <div class="container">
     <!-- TOP SECTION -->
-    <div class="top-blue-strip"></div>
+    <div class="top-gold-strip"></div>
     <div class="top-banner-wrapper">
         <div class="team-container">
             <span class="team-name" id="team1"></span>
@@ -156,12 +163,13 @@
             <span class="team-name" id="team2"></span>
         </div>
     </div>
-    <div class="top-small-blue-strip"></div>
+    <div class="top-small-gold-strip"></div>
 
     <!-- Middle flexible area -->
     <div class="middle-flex"></div>
 
     <!-- BOTTOM SECTION -->
+    <div class="middle-gold-strip"></div>
     <div class="bottom-black-bar">
         <span id="showTitle"></span>
     </div>
@@ -172,7 +180,7 @@
             <p class="subtext" id="subtitle"></p>
         </div>
     </div>
-    <div class="bottom-blue-strip"></div>
+    <div class="bottom-gold-strip"></div>
 </div>
 
 <script>
